@@ -1,77 +1,58 @@
 package com.bridgelabz.user;
 
-import org.junit.Assert;
-import org.junit.Test;
-
-
 public class UserInputValidationTest {
-	
-
-
-
 	
 		@Test
 	    public void givenFirstName_WhenProper_ShouldReturnTrue() {
-	        UserInputValidation userInputValidationTest = new UserInputValidation();
-	        boolean result = userInputValidationTest.isValidFirstName("Dipak");
+	        UserInputValidation userInputValidation = new UserInputValidation();
+	        boolean result = UserInputValidation.isValidFirstName("Dipk");
 	        Assert.assertEquals(true, result);
 	    }
 	    @Test
 	    public void givenFirstName_WhenShort_ShouldReturnFalse() {
 	        UserInputValidation userInputValidation = new UserInputValidation();
-	        boolean result = userInputValidation.isValidFirstName("Pr");
+	        boolean result = UserInputValidation.isValidFirstName("Prjl");
 	        Assert.assertEquals(false, result);
 	    }
-	    private boolean isValidFirstName(String string) {
-			// TODO Auto-generated method stub
-			return false;
-		}
-		@Test
+	    @Test
 	    public void givenLastName_WhenProper_ShouldReturnTrue() {
 	        UserInputValidation userInputValidation = new UserInputValidation();
-	        boolean result = userInputValidation.isValidFirstName("bhuwan");
+	        boolean result = UserInputValidation.isValidLastName("bhuwan");
 	        Assert.assertEquals(true, result);
 	    }
 
 	    @Test
 	    public void givenLastName_WhenShort_ShouldReturnFalse() {
 	        UserInputValidation userInputValidation = new UserInputValidation();
-	        boolean result = userInputValidation.isValidFirstName("bh");
+	        boolean result = UserInputValidation.isValidLastName("bh");
 	        Assert.assertEquals(false, result);
 	    }
 	    @Test
 	    public void givenEmail_WhenValid_ShouldReturnTrue() {
 	        UserInputValidation userInputValidation = new UserInputValidation();
-	        boolean result = userInputValidation.isValidEmail("aryabhuwan873@gmail.com");
+	        boolean result = userInputValidation.isValidEmail("bhuwanarya730@gmail.com");
 	        Assert.assertEquals(true, result);
 	    }
 
-	    private boolean isValidEmail(String string) {
-			// TODO Auto-generated method stub
-			return false;
-		}
-		@Test
+	    @Test
 	    public void givenEmail_WhenNotValid_ShouldReturnFalse() {
 	        UserInputValidation userInputValidation = new UserInputValidation();
-	        boolean result = userInputValidation.isValidEmail("aryabhuwan..675.gmail.com");
+	        boolean result = UserInputValidation.isValidEmail("bhuwan..675.gmail.com");
 	        Assert.assertEquals(false, result);
 	    }
 	    @Test
 	    public void givenMobileNum_WhenProper_ShouldReturnTrue() {
 	        UserInputValidation userInputValidation = new UserInputValidation();
-	        boolean result = userInputValidation.isValidMobileNumber("91 9087654321");
+	        boolean result = UserInputValidation.isValidMobileNumber("91 9087654321");
 	        Assert.assertEquals(true, result);
 	    }
 
 	    @Test
 	    public void givenMobileNum_WhenNotProper_ShouldReturnFalse() {
 	        UserInputValidation userInputValidation = new UserInputValidation();
-	        boolean result = userInputValidation.isValidMobileNumber("908765-4321908");
+	        boolean result = UserInputValidation.isValidMobileNumber("908765-4321908");
 	        Assert.assertEquals(false, result);
 	    }
-		private boolean isValidMobileNumber(String string) {
-			// TODO Auto-generated method stub
-			return false;
-		}
-	
-}
+
+	}
+
