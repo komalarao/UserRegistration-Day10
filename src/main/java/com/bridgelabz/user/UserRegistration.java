@@ -12,6 +12,9 @@ package com.bridgelabz.user;
 	        System.out.println("Enter last name: ");
 	        String lastName = scanner.next();
 	        System.out.println(UserInputValidation.isValidLastName(lastName) ? "Valid" : "In Valid");
+	        System.out.println("Enter email: ");
+	        String email = scanner.next();
+	        System.out.println(UserInputValidation.isValidEmail(email) ? "Valid" : "In Valid");
 	        scanner.close();
 		}
 	}
