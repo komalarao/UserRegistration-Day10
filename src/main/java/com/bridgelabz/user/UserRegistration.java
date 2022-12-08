@@ -15,7 +15,11 @@ package com.bridgelabz.user;
 	        System.out.println("Enter email: ");
 	        String email = scanner.next();
 	        System.out.println(UserInputValidation.isValidEmail(email) ? "Valid" : "In Valid");
+	        System.out.println("Enter mobile number: ");
+	        String mobileNumber = scanner.next();
+	        System.out.println(UserInputValidation.isValidMobileNumber(mobileNumber) ? "Valid" : "In Valid");
 	        scanner.close();
 		}
 	}
+
 
