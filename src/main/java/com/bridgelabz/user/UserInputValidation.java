@@ -1,5 +1,6 @@
 package com.bridgelabz.user;
 
+
 	import java.util.regex.Matcher;
 	import java.util.regex.Pattern;
 
@@ -15,5 +16,16 @@ package com.bridgelabz.user;
 
 			        return matcher.matches();
 			    }
+			    
+			 // Creating isValidLastName method to validate the last name given by user using regex
+			    public static boolean isValidLastName(String lastName) {
+			        String firstNameRegex = "[A-Z]{1}[a-z]{2,}";
+
+			        Pattern pattern = Pattern.compile(firstNameRegex);
+
+			        Matcher matcher = pattern.matcher(lastName);
+
+			        return matcher.matches();
+		}
 		}
 
