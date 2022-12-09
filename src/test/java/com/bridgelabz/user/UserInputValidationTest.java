@@ -8,7 +8,7 @@ package com.bridgelabz.user;
 		@Test
 	    public void givenFirstName_WhenProper_ShouldReturnTrue() {
 	        UserInputValidationTest userInputValidationTest = new UserInputValidationTest();
-	        boolean result = userInputValidationTest.isValidFirstName("Dipali");
+	        boolean result = userInputValidationTest.isValidFirstName("Krishna");
 	        Assert.assertEquals(true, result);
 	    }
 	    private boolean isValidFirstName(String string) {
