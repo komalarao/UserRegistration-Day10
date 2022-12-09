@@ -13,7 +13,7 @@ public class UserInputValidationTest {
 		@Test
 	    public void givenFirstName_WhenProper_ShouldReturnTrue() {
 	        UserInputValidation userInputValidationTest = new UserInputValidation();
-	        boolean result = userInputValidationTest.isValidFirstName("Dipak");
+	        boolean result = userInputValidationTest.isValidFirstName("Deepak");
 	        Assert.assertEquals(true, result);
 	    }
 	    @Test
@@ -29,20 +29,20 @@ public class UserInputValidationTest {
 		@Test
 	    public void givenLastName_WhenProper_ShouldReturnTrue() {
 	        UserInputValidation userInputValidation = new UserInputValidation();
-	        boolean result = userInputValidation.isValidFirstName("bhuwan");
+	        boolean result = userInputValidation.isValidFirstName("sathya");
 	        Assert.assertEquals(true, result);
 	    }
 
 	    @Test
 	    public void givenLastName_WhenShort_ShouldReturnFalse() {
 	        UserInputValidation userInputValidation = new UserInputValidation();
-	        boolean result = userInputValidation.isValidFirstName("bh");
+	        boolean result = userInputValidation.isValidFirstName("ma");
 	        Assert.assertEquals(false, result);
 	    }
 	    @Test
 	    public void givenEmail_WhenValid_ShouldReturnTrue() {
 	        UserInputValidation userInputValidation = new UserInputValidation();
-	        boolean result = userInputValidation.isValidEmail("aryabhuwan873@gmail.com");
+	        boolean result = userInputValidation.isValidEmail("manoharvakamullu1999@gmail.com");
 	        Assert.assertEquals(true, result);
 	    }
 
@@ -53,7 +53,7 @@ public class UserInputValidationTest {
 		@Test
 	    public void givenEmail_WhenNotValid_ShouldReturnFalse() {
 	        UserInputValidation userInputValidation = new UserInputValidation();
-	        boolean result = userInputValidation.isValidEmail("aryabhuwan..675.gmail.com");
+	        boolean result = userInputValidation.isValidEmail("manoharvakamullu..1999.gmail.com");
 	        Assert.assertEquals(false, result);
 	    }
 	    @Test
